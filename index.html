@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larana Shop</title>
+    <link rel="shortcut icon" href="./static/img/2123665.png" type="image/x-icon">
+    <link rel="stylesheet" href="./static/styles/styles.css">
+</head>
+
+<body>
+    <header  class="header">
+        <nav class="navegacion">
+        <figure>
+            <img src="./static/img/2123665.png" alt="logo" id="logo" class="logo"
+            >
+          </figure>
+        
+        <nav>
+
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="#">Inicio</a></li>
+                <li class="listaItem"><a class="linkNav" href="./templates/ofertas.html">Ofertas</a></li>
+                <li class="listaItem"><a class="linkNav" href="./templates/registro.html">registrarse</a></li>
+                <li class="listaItem"><a class="linkNav iniciarSesion" href="./templates/inicioSesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main" class="main">
+        <section class="banner">
+            <h1 class="tituloPrincipal">Encontrá tus productos en un solo lugar</h1>
+            <h2 class="subtituloPrincipal">Nutrición Infantil, pañales, cuidado del bebé,<br>  Accesorios y mucho más. </h2>
+            
+        </section>
+
+       <section class="buscadorPrincipal">
+        <h2 class="tituloSection">¿Qué estas buscando?</h2>
+      
+       <div class="category">
+            <fieldset>
+
+                <label for="category1">Pañales</label>
+                <input type="checkbox" name="position" id="category1" value="category1">
+
+                <label for="category2">Nutrición Infantil</label>
+                <input type="checkbox" name="position" id="category2" value="category2">
+
+                <label for="category3">Higiene del Bebé</label>
+                <input type="checkbox" name="position" id="category3" value="category3">
+
+                <label for="category4">Accesorios del Bebé</label>
+                <input type="checkbox" name="position" id="category4" value="category4">
+            
+            </fieldset>
+        <fieldset>
+                <label for="Search" class="search">
+                <input type="text" placeholder="Buscar..."></label>
+                <button type="submit">Buscar</button>
+            
+            </fieldset>
+
+        </div>
+    </section>
+    <section id="tendencias" class="ofertas">
+        <h3 class="tituloSection">Lo mas Vendido</h3>
+        <div class="cards-container">
+            <article class="card">
+                <img src="./static/img/pañales.webp" alt="Pañales" class="imgTendencia">
+                <h2>Pañales</h2>
+
+                <div class="content">
+                    <p>Pañales Huggies Flexi Comfort Disney Maxi </p>
+
+                    <p><br>Precio: $1000</p>
+                    <a href="./templates/detalle.html" class="btn ">Comprar</a>
+
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="./static/img/lecheInfantil.webp" alt="party">
+
+                <h2>Leche Infantil</h2>
+                <div class="content">
+                    <p> Leche Infantil Polvo Nutrilon Profutura 4 2+ Años x 800 g </p>
+
+                    <p><br>Precio: $1000</p>
+                    <a href="./templates/detalle.html" class="btn ">Comprar</a>
+                </div>
+
+            </article>
+
+            <article class="card">
+                <img src="./static/img/fecula.webp" alt="food">
+
+                <h2>Fecula</h2>
+                <div class="content">
+                    <p>Fecula Johnson Baby Bed Time Violeta x 200 g </p>
+
+                    <p><br>Precio: $1000</p>
+                    <a href="./templates/detalle.html" class="btn ">Comprar</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="./static/img/shampoo.webp" alt="marathon">
+
+                <h2>Shampoo</h2>
+                <div class="content">
+                    <p>Shampoo Johnson's Baby Cabello Claro x 400 ml</p>
+                    <p><br>Precio: $1000</p>
+                    <a href="./templates/detalle.html" class="btn ">Comprar</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="./static/img/toallitas.webp" alt="museum">
+
+                <h2>Toallitas Húmedas</h2>
+                <div class="content">
+                    <p> Toallitas Húmedas Johnson's Baby Hora del Sueño x 96 un</p>
+                    <p><br>Precio: $1000</p>
+                    <a href="./templates/detalle.html" class="btn ">Comprar</a>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <img src="./static/img/cremaHipoglos.webp" alt="music">
+
+                <h2>Crema Hipoglós</h2>
+                <div class="content">
+                    <p> Crema Hipoglós Cuidado Diario x 90 g </p>
+                    <p><br>Precio: $1000</p>
+                    <a href="./templates/detalle.html" class="btn ">Comprar</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav contacto" href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#main" class="flechaArriba">
+            <img src="./static/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+
+
+</body>
+
+</html>
