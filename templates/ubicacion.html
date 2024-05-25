@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro compras</title>
     <link rel="shortcut icon" href="./../static/img/2123665.png" type="image/x-icon">
-    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link rel="stylesheet" href="./../static/styles/styles.css">
 </head>
-
-<body class="bodyRegistrarse">
+</head>
+<body>
     <header  class="header">
         <nav class="navegacion">
         <figure>
@@ -21,35 +21,21 @@
             <ul class="listaNav">
                 <li class="listaItem"><a class="linkNav" href="./../index.html">Inicio</a></li>
                 <li class="listaItem"><a class="linkNav" href="./ofertas.html">Ofertas</a></li>
-                <li class="listaItem"><a class="linkNav" href="./registro.html">registrarse</a></li>
-                <li class="listaItem"><a class="linkNav iniciarSesion" href="#">Iniciar Sesión</a></li>
-                <li class="listaItem"><a class="linkNav" href="./ubicacion.html">Ubicación</a></li>
+                <li class="listaItem"><a class="linkNav" href="./registro.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav iniciarSesion" href="./inicioSesion.html">Iniciar Sesión</a></li>
+                <li class="listaItem"><a class="linkNav" href="#">Ubicación</a></li>
             </ul>
         </nav>
 
     </header>
-    <main id="main" class="main">
-        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
-            <!--pongo get ya que en github pages da error el method post-->
-            <form action="" method="get">
-                <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
-                <div>
-                    <input type="email" placeholder="Email" id="email" name="email">
-                    <div class="error-text"></div>
-                </div>
-                <div>
-                    <input type="password" placeholder="Contraseña" id="password" name="password">
-                    <div class="error-text"></div>
-                </div>
-                <div>
-                    <input class="boton" type="submit" value="Iniciar Sesión">
-                </div>
-                <div>
-                    <a id="ayuda" class="ayuda" href="./registro.html">Registrarse</a>
-                </div>
-            </form>
-        </section>
+    <main>
+        <div id="map"></div>
+        <script src="../static/js/script.js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
     </main>
+    
+    
+    
     <footer class="footer">
         <nav class="navegacion">
             <ul class="listaNav">
@@ -62,6 +48,7 @@
         <a href="#main" class="flechaArriba">
             <img src="../static/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
         </a>
-    </footer>   
+    </footer> 
+     
 </body>
 </html>

@@ -28,47 +28,48 @@ body {
         align-items: center;
         margin-left: 40px;
         margin-right: 40px;
-    
 
-        }
-        /* padding: 1.5rem 0; */
 
-        .listaNav {
-            list-style: none;
-            display: flex;
-            align-items: center;
+    }
 
-            .listaItem {
-                margin-right: 20px;
+    /* padding: 1.5rem 0; */
 
-                .linkNav {
-                    text-decoration: none;
-                    color: #ffffff;
-                    font-weight: 700;
-                    font-size: 1.1rem;
-                    padding: 0.5rem 1rem;
-                    /* Agregar efecto de botón presionado */
-                    transition: transform 0.3s, box-shadow 0.3s;
-                   
-                }
+    .listaNav {
+        list-style: none;
+        display: flex;
+        align-items: center;
 
-                .linkNav.iniciarSesion {
-                    background-color: #181419;
-                    color: white;
+        .listaItem {
+            margin-right: 20px;
 
-                    border-radius: 5px;
-                    /* Agregar efecto de botón presionado */
-                    transition: transform 0.3s, box-shadow 0.3s;
+            .linkNav {
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+                /* Agregar efecto de botón presionado */
+                transition: transform 0.3s, box-shadow 0.3s;
 
-                    &:hover {
-                        background-color: #E48CC3;
-                        /* transform: scale(0.95);
+            }
+
+            .linkNav.iniciarSesion {
+                background-color: #181419;
+                color: white;
+
+                border-radius: 5px;
+                /* Agregar efecto de botón presionado */
+                transition: transform 0.3s, box-shadow 0.3s;
+
+                &:hover {
+                    background-color: #E48CC3;
+                    /* transform: scale(0.95);
                      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
-                    }
                 }
             }
         }
     }
+}
 
 
 /* Logo */
@@ -78,10 +79,11 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    &:hover{
+
+    &:hover {
         animation: tilt-n-move-shaking 0.25s infinite;
     }
-    
+
 
 
 }
@@ -136,7 +138,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
-        
+
 
         .tituloPrincipal {
             font-size: 3rem;
@@ -164,7 +166,7 @@ body {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-           
+
         }
     }
 
@@ -172,8 +174,8 @@ body {
         display: flex;
         width: 100%;
         justify-content: space-between;
-   
-       
+
+
     }
 
     .category fieldset {
@@ -216,65 +218,73 @@ button {
 
 
 
-.ofertas{
-    width:80%;
+.ofertas {
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
-    .tituloSection{
+
+    .tituloSection {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 40px;
         text-transform: uppercase;
         color: rgb(56 55 61);
     }
-    .cards-container{
+
+    .cards-container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap:60px;
+        gap: 60px;
         padding: 20px;
-    
-            .card{
-                width: 25%;
-                height: 35%;
-                color: black;
-                background-color: rgb(163 163 220);
-                display: flex;
-                flex-direction: column;
-                box-shadow: 5px 9px 9px #1f1e1f;
-                
-                h2 {
-                    padding-top: 10px;
-                    font-size: 25px;
-                    text-align: center;
+
+        .card {
+            width: 25%;
+            height: 35%;
+            color: black;
+            background-color: rgb(163 163 220);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 5px 9px 9px #1f1e1f;
+            &:hover {
+                transform: scale(1.1); /* Aumenta el tamaño de la tarjeta al 110% cuando se pasa el mouse sobre ella */
                 }
 
-                .imgTendencia{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 10px;
-                   
-                }
-                .content {
-                    width: 100%;
-                    align-self: center;
-                    padding: 1rem;
-                }
-                a{
+            h2 {
+                padding-top: 10px;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .imgTendencia {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+
+            }
+          
+
+            .content {
+                width: 100%;
+                align-self: center;
+                padding: 1rem;
+             a {
                 margin: 15px;
                 box-shadow: 2px 2px 2px #822694;
-                p {
+
+             p {
                     margin-top: 0;
                     margin-bottom: 1rem;
                 }
             }
         }
+    }}
     }
-              
-}
-       
+   
+
+
 
 
 /*ESTILOS ESCRITORIO FOOTER*/
@@ -346,4 +356,152 @@ button {
             }
         }
     }
+}
+
+
+/*ESTILOS ESCRITORIO PARA PAGINA Registrarse */
+.bodyRegistrarse{
+    height: 100vh;
+    background:linear-gradient(to right top, #24242473,#24242473),url("../img/fondoregistro.png");
+    background-size: cover;
+    background-position: center;
+   
+    .main{
+         /*seccion de registrarse.html*/
+        .seccionRegistrarse{
+            background-color :#d20062;
+            width: 30%;
+            margin:30px 30px 30px 300px;
+            border-radius: 5px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            height:90vh;
+            font-size:1.2rem;
+            .tituloRegistrarse{
+                font-size: 2rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+            /*seleccionar todos los input menos el checkbox*/
+            form{
+                width: 100%;
+                padding:40px;
+                input:not(.check,.boton),select{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    padding: 0px 20px;
+                    font-size: 1.2rem;
+                    border-radius: 20px;
+                    border: 2px solid #9f3667;
+                    background-color: #333333;
+                    outline: none;
+                    color:rgb(255, 255, 255);
+                    border-color: #7d767e;
+                }
+                .error input:not(.check,.boton),.error select{
+                    border: 1px solid #ff0000;
+                }
+                .error-text{
+                    color: #ff0000;
+                    font-size: 0.8rem;
+                    margin-top:0px;
+                    margin-bottom: 10px;
+                }
+              
+                .terminos{
+                    font-size: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .textoCheck{
+                        margin-left: 10px;
+                    }
+                }
+                .boton{
+                    width: 87%;
+                    box-sizing: content-box;
+                    background-color:#271c1c;
+                    border: 2px solid #9f3647;
+                    color: #ffffff;
+                    padding: 1rem 1rem;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                   
+                }
+                .ayuda{
+                    margin-top:40px;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    color: #0f0f0f;
+                    font-weight:400;
+                   
+                }
+            }
+           
+        }
+   
+    }
+}
+
+
+
+/*media querys para mobile PAGINA registrarse*/
+@media (max-width: 1200px) {
+    .bodyRegistrarse{
+        .headerRegistrarse{
+            padding:20px;
+            .anclaLogo{
+                font-size: 1rem;
+            }
+        }
+        .main{
+            .seccionRegistrarse{
+                width: 60%;
+                padding: 10px 10px;
+                .tituloRegistrarse{
+                    font-size: 2rem;
+                }
+               form{
+                width: 100%;
+                text-align: center;
+               
+                input:not(.check,.boton),select{
+                    width: 80%;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+                .terminos{
+                    width: 80%;
+                    margin:0 auto;
+                    font-size: 0.7rem;
+                }
+                .boton{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 70%;
+                    padding: 0.8rem 0.8rem;
+                    font-size: 0.8rem;
+                }
+                .ayuda{
+                    text-align: left;
+                    font-size: 0.8rem;
+                }
+               }
+               
+            }
+        }
+    }
+
+}
+#map {
+	height: 500px;
+	width: 100%;
 }
